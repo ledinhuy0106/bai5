@@ -9,9 +9,9 @@ import {FormControl, FormGroup} from "@angular/forms";
 })
 export class BaitapnhoComponent implements OnInit {
   form = new FormGroup({
+    id : new FormControl(),
     name : new FormControl(),
-    age : new FormControl(),
-    address : new FormControl()
+    price : new FormControl()
   })
   product : Product = {};
   listproduct: Product[] = [

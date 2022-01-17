@@ -1,7 +1,7 @@
 <div *ngFor="let pro of listproduct">
   <h1>{{pro.name}} Tên {{pro.name}} Giá {{pro.price}}</h1>
 </div>
-<form [formGroup]="form" (submit)="addNewProduct()">
+<form [formGroup]="form"(submit)="addNewProduct()">
   <input type="text" formControlName="id">
   <input type="text" formControlName="name">
   <input type="text" formControlName="price">
