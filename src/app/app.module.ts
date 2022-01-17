@@ -7,9 +7,7 @@ import { MaytinhComponent } from './maytinh/maytinh.component';
 import { ColorComponent } from './color/color.component';
 import { ProductComponent } from './product/product.component';
 import { NameCardComponent } from './name-card/name-card.component';
-import { ProgressBarComponent } from './progress-bar/progress-bar.component';
-import { AngularRatingBarComponent } from './angular-rating-bar/angular-rating-bar.component';
-import { EmployeeComponent } from './employee/employee.component';
+import { BaitapnhoComponent } from './baitapnho/baitapnho.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +16,7 @@ import { EmployeeComponent } from './employee/employee.component';
     ColorComponent,
     ProductComponent,
     NameCardComponent,
-    ProgressBarComponent,
-    AngularRatingBarComponent,
-    EmployeeComponent
+    BaitapnhoComponent
   ],
   imports: [
     BrowserModule,
