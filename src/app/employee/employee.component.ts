@@ -16,7 +16,6 @@ export class EmployeeComponent implements OnInit {
   }
 
   add(){
-      // @ts-ignore
-    document.getElementById("uy").value
+    console.log(this.form.value)
   }
 }
