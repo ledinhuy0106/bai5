@@ -7,6 +7,7 @@ import {Product} from "../../model/product";
   styleUrls: ['./baitapnho.component.css']
 })
 export class BaitapnhoComponent implements OnInit {
+  product : Product = {};
   listproduct: Product[] = [
     {
       id: "1",
@@ -26,6 +27,9 @@ export class BaitapnhoComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+  addNewProduct() {
+    this.listproduct.push(this.product);
   }
 
 }

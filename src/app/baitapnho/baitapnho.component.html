@@ -1,4 +1,22 @@
 <div *ngFor="let pro of listproduct">
-  <h1>{{pro.id}}</h1>
-  <h1>{{pro.name}}</h1>
+  <h1>{{pro.name}} Tên {{pro.name}}</h1>
 </div>
+<div>
+  <table>
+    <tr>
+      <td>Tên:</td>
+      <td><textarea [(ngModel)]="product.name" cols="70"></textarea></td>
+    </tr>
+    <tr>
+      <td>Giá:</td>
+      <td>
+        <textarea [(ngModel)]="product.price" cols="70"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button style="float: right" (click)="addNewProduct()">Thêm</button></td>
+    </tr>
+  </table>
+</div>
+<hr>
