@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Product} from "../../model/product";
+import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-baitapnho',
@@ -7,6 +8,11 @@ import {Product} from "../../model/product";
   styleUrls: ['./baitapnho.component.css']
 })
 export class BaitapnhoComponent implements OnInit {
+  form = new FormGroup({
+    name : new FormControl(),
+    age : new FormControl(),
+    address : new FormControl()
+  })
   product : Product = {};
   listproduct: Product[] = [
     {
