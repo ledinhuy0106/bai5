@@ -7,6 +7,7 @@ import { MaytinhComponent } from './maytinh/maytinh.component';
 import { ColorComponent } from './color/color.component';
 import { ProductComponent } from './product/product.component';
 import { NameCardComponent } from './name-card/name-card.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NameCardComponent } from './name-card/name-card.component';
     MaytinhComponent,
     ColorComponent,
     ProductComponent,
-    NameCardComponent
+    NameCardComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
