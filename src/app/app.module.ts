@@ -8,6 +8,7 @@ import { ColorComponent } from './color/color.component';
 import { ProductComponent } from './product/product.component';
 import { NameCardComponent } from './name-card/name-card.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { AngularRatingBarComponent } from './angular-rating-bar/angular-rating-bar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
     ColorComponent,
     ProductComponent,
     NameCardComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    AngularRatingBarComponent
   ],
   imports: [
     BrowserModule,
