@@ -9,11 +9,11 @@ import {IRatingUnit} from '../i-rating-unit';
 })
 export class RatingBarComponent implements OnInit, OnChanges {
   @Input()
-  max = 10;
+  max:number= 10;
   @Input()
-  ratingValue = 5;
+  ratingValue:number= 5;
   @Input()
-  showRatingValue = true;
+  showRatingValue:boolean= true;
 
   @Output()
   rateChange = new EventEmitter<number>();
@@ -30,8 +30,7 @@ export class RatingBarComponent implements OnInit, OnChanges {
       this.calculate(max, this.ratingValue);
     }
   }
-  // @ts-ignore
-  calculate(max, ratingValue) {
+  calculate(max: number, ratingValue: number) {
     this.ratingUnits = Array.from({length: max},
       (_, index) => ({
         value: index + 1,
@@ -42,14 +41,12 @@ export class RatingBarComponent implements OnInit, OnChanges {
   ngOnInit() {
     this.calculate(this.max, this.ratingValue);
   }
-// @ts-ignore
-  select(index) {
+  select(index: number) {
     this.ratingValue = index + 1;
     this.ratingUnits.forEach((item, idx) => item.active = idx < this.ratingValue);
     this.rateChange.emit(this.ratingValue);
   }
-  // @ts-ignore
-  enter(index) {
+  enter(index: number) {
     this.ratingUnits.forEach((item, idx) => item.active = idx <= index);
   }
   reset() {

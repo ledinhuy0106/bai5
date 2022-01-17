@@ -9,6 +9,7 @@ import { ProductComponent } from './product/product.component';
 import { NameCardComponent } from './name-card/name-card.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { AngularRatingBarComponent } from './angular-rating-bar/angular-rating-bar.component';
+import { EmployeeComponent } from './employee/employee.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AngularRatingBarComponent } from './angular-rating-bar/angular-rating-b
     ProductComponent,
     NameCardComponent,
     ProgressBarComponent,
-    AngularRatingBarComponent
+    AngularRatingBarComponent,
+    EmployeeComponent
   ],
   imports: [
     BrowserModule,
