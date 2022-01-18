@@ -14,7 +14,7 @@
   </tr>
   </tbody>
 </table>
-<form [formGroup]="form" >
+<form [formGroup]="form" (submit)="addNewProduct()" >
   <label>
     Name:
     <input type="text" formControlName="name">
@@ -33,5 +33,5 @@
       Gía phải cao hơn 1k
     </div>
   </label>
-  <button type="submit" [disabled]="!form.valid">Submit </button>
+  <button type="submit" [disabled]="!form.valid">Submit</button>
 </form>

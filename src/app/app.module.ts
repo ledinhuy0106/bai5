@@ -11,6 +11,7 @@ import { BaitapnhoComponent } from './baitapnho/baitapnho.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { TodoComponent } from './todo/todo.component';
 import { SutudentComponent } from './sutudent/sutudent.component';
+import { TimelinesComponent } from './timelines/timelines.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { SutudentComponent } from './sutudent/sutudent.component';
     NameCardComponent,
     BaitapnhoComponent,
     TodoComponent,
-    SutudentComponent
+    SutudentComponent,
+    TimelinesComponent
   ],
   imports: [
     BrowserModule,
