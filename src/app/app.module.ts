@@ -13,6 +13,7 @@ import { TodoComponent } from './todo/todo.component';
 import { SutudentComponent } from './sutudent/sutudent.component';
 import { TimelinesComponent } from './timelines/timelines.component';
 import { YoutubePlaylistComponent } from './youtube-playlist/youtube-playlist.component';
+import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { YoutubePlaylistComponent } from './youtube-playlist/youtube-playlist.co
     TodoComponent,
     SutudentComponent,
     TimelinesComponent,
-    YoutubePlaylistComponent
+    YoutubePlaylistComponent,
+    YoutubePlayerComponent,
   ],
   imports: [
     BrowserModule,

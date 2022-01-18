@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-//@ts-ignore
+// @ts-ignore
 import {Song} from '../model/song';
 
 @Injectable({
@@ -32,7 +32,7 @@ export class SongService {
   constructor() {
   }
 
-  findSongById(id: string) {
+  findSongById(id: string | null) {
     return this.playlist.find(item => item.id === id);
   }
 }
