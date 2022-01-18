@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Product} from "../../model/product";
-import {FormControl, FormGroup} from "@angular/forms";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-baitapnho',
@@ -9,9 +9,9 @@ import {FormControl, FormGroup} from "@angular/forms";
 })
 export class BaitapnhoComponent implements OnInit {
   form = new FormGroup({
-    id : new FormControl(),
-    name : new FormControl(),
-    price : new FormControl()
+    id: new FormControl(''),
+    name: new FormControl('',Validators.required),
+    price: new FormControl('',[Validators.required,Validators.min(1000)]),
   })
   product : Product = {};
   listproduct: Product[] = [
