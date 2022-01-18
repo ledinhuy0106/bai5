@@ -10,7 +10,7 @@ import { NameCardComponent } from './name-card/name-card.component';
 import { BaitapnhoComponent } from './baitapnho/baitapnho.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { TodoComponent } from './todo/todo.component';
-
+import { FormContacComponent } from './form-contac/form-contac.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +19,8 @@ import { TodoComponent } from './todo/todo.component';
     ProductComponent,
     NameCardComponent,
     BaitapnhoComponent,
-    TodoComponent
+    TodoComponent,
+    FormContacComponent
   ],
   imports: [
     BrowserModule,
