@@ -8,6 +8,8 @@ import { ColorComponent } from './color/color.component';
 import { ProductComponent } from './product/product.component';
 import { NameCardComponent } from './name-card/name-card.component';
 import { BaitapnhoComponent } from './baitapnho/baitapnho.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { BaitapnhoComponent } from './baitapnho/baitapnho.component';
     ColorComponent,
     ProductComponent,
     NameCardComponent,
-    BaitapnhoComponent
+    BaitapnhoComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

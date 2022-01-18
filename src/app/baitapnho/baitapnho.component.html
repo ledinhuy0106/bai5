@@ -1,9 +1,32 @@
-<div *ngFor="let pro of listproduct">
-  <h1>{{pro.name}} Tên {{pro.name}} Giá {{pro.price}}</h1>
-</div>
-<form [formGroup]="form"(submit)="addNewProduct()">
-  <input type="text" formControlName="id">
-  <input type="text" formControlName="name">
-  <input type="text" formControlName="price">
-  <button>add</button>
+<table class="table">
+  <thead class="table-dark">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Price</th>
+  </tr>
+  </thead>
+  <tbody *ngFor="let product of listproduct">
+  <tr>
+    <td>{{product.id}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.price}}</td>
+  </tr>
+  </tbody>
+</table>
+<form [formGroup]="form" >
+  <label>
+    ID:
+    <input type="text" formControlName="id">
+  </label>
+  <label>
+    Name:
+    <input type="text" formControlName="name">
+  </label>
+  <label>
+    price
+    <input type="text" formControlName="price">
+  </label>
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="addNewProduct()">create</button>
+  <input  type="reset" value="Reset">
 </form>

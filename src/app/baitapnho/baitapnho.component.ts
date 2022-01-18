@@ -28,14 +28,14 @@ export class BaitapnhoComponent implements OnInit {
 
   ]
 
-
   constructor() {
   }
 
   ngOnInit(): void {
   }
   addNewProduct() {
-    this.listproduct.push(this.product);
-  }
 
+    // @ts-ignore
+    this.listproduct.push(this.form.value)
+   }
 }
