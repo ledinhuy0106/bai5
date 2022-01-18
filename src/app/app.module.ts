@@ -12,6 +12,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { TodoComponent } from './todo/todo.component';
 import { SutudentComponent } from './sutudent/sutudent.component';
 import { TimelinesComponent } from './timelines/timelines.component';
+import { YoutubePlaylistComponent } from './youtube-playlist/youtube-playlist.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { TimelinesComponent } from './timelines/timelines.component';
     BaitapnhoComponent,
     TodoComponent,
     SutudentComponent,
-    TimelinesComponent
+    TimelinesComponent,
+    YoutubePlaylistComponent
   ],
   imports: [
     BrowserModule,
